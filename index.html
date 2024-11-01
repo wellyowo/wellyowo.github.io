@@ -587,41 +587,56 @@
           </div>
 
           <div class="col-lg-7 mt-5 mt-lg-0 d-flex align-items-stretch">
-            <form action="forms/contact.php" method="post" role="form" class="php-email-form">
-              <div class="row">
+            <form id="contactForm" onsubmit="sendEmail(); return false;">
+                <div class="row">
                 <div class="form-group col-md-6">
-                  <label for="name">Your Name</label>
-                  <input type="text" name="name" class="form-control" id="name" required>
+                    <label for="name">Your Name</label>
+                    <input type="text" name="name" class="form-control" id="name" required>
                 </div>
                 <div class="form-group col-md-6">
-                  <label for="name">Your Email</label>
-                  <input type="email" class="form-control" name="email" id="email" required>
+                        <label for="email">Your Email</label>
+                    <input type="email" class="form-control" name="email" id="email" required>
                 </div>
-              </div>
+                                </div>
+                <div class="form-group">
+                    <label for="subject">Subject</label>
+                    <input type="text" class="form-control" name="subject" id="subject" required>
+                </div>
               <div class="form-group">
-                <label for="name">Subject</label>
-                <input type="text" class="form-control" name="subject" id="subject" required>
+                    <label for="message">Message</label>
+                    <textarea class="form-control" name="message" rows="10" id="message" required></textarea>
               </div>
-              <div class="form-group">
-                <label for="name">Message</label>
-                <textarea class="form-control" name="message" rows="10" required></textarea>
+              <div class="text-center">                
+                  <div class="text-center"><button type="submit">Switch to send email</button></div>
               </div>
-              <div class="my-3">
-                <div class="loading">Loading</div>
-                <div class="error-message"></div>
-                <div class="sent-message">Your message has been sent. Thank you!</div>
-              </div>
-              <div class="text-center"><button type="submit">Send Message</button></div>
             </form>
-          </div>
-
+        </div>
+    
+        <!-- JavaScript for handling the mailto functionality -->
+        <script>
+          function sendEmail() {
+              // Get form values
+              const name = document.getElementById("name").value;
+              const email = document.getElementById("email").value;
+              const subject = document.getElementById("subject").value;
+              const message = document.getElementById("message").value;
+      
+              // Construct the mailto URL
+              const mailtoLink = `mailto:welly70114@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(
+                    "From: " + name + "\nEmail: " + email + "\n\nMessage:\n" + message
+              )}`;
+      
+              // Open the mailto link in the user's default email client
+              window.location.href = mailtoLink;
+          }
+        </script>
+        
         </div>
 
       </div>
     </section><!-- End Contact Section -->
 
   </main><!-- End #main -->
-
   <!-- ======= Footer ======= -->
   <!--
   <footer id="footer">
