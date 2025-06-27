@@ -199,7 +199,7 @@ h1, h2, h3, h4, h5, h6 {
   width: 100%;
   height: 100vh;
   /* background: url("../img/hero_bg.jpg") top center; */
-  background-size: cover;
+  background-size: cover; 
 }
 #hero:before {
   content: "";
@@ -951,4 +951,65 @@ section {
     width: auto;
     padding-right: 20px 15px;
   }
+}
+/* Custom CSS for Project Image Sizing */
+#projects .portfolio-item img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover; 
+}
+/* Custom CSS for Project Card Styles (Corrected) */
+#projects .portfolio-item {
+  margin-bottom: 30px;
+}
+
+#projects .portfolio-wrap {
+  transition: 0.3s;
+  position: relative;
+  overflow: hidden;
+  background: #fff;
+  box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
+}
+
+#projects .portfolio-wrap img {
+  transition: all 0.3s ease-in-out;
+  width: 100%;
+  height: 250px; 
+  object-fit: cover;
+}
+
+#projects .portfolio-wrap:hover img {
+  transform: scale(1.05);
+}
+
+#projects .portfolio-info {
+  padding: 20px 15px;
+}
+
+#projects .portfolio-info h4 {
+  font-size: 18px;
+  font-weight: 700;
+  color: #37423b;
+  margin-bottom: 5px;
+}
+
+#projects .portfolio-info p {
+  color: #6c757d;
+  font-size: 14px;
+  margin-bottom: 0;
+  padding: 0;
+}
+/*--------------------------------------------------------------
+# Custom GLightbox (Popup Window) Font Styles
+--------------------------------------------------------------*/
+.glightbox-container .gslide-title {
+  font-size: 28px; /* size of title */
+  font-weight: 600;
+  margin-bottom: 15px; /* distance of totle and content */
+}
+
+.glightbox-container .gslide-desc {
+  font-size: 20px; /* size of content */
+  line-height: 1.6; /* line distance */
+  color: #000000;
 }

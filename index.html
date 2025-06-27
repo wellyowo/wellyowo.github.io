@@ -38,6 +38,11 @@
           <a href="https://www.facebook.com/profile.php?id=100004371691509/" target="_blank" class="facebook"><i class="bx bxl-facebook"></i></a>
           <a href="https://github.com/wellyowo" target="_blank" class="github"><i class="bx bxl-github"></i></a>
           </div>
+        <div class="cv-links mt-2 text-center">
+          <a href="assets/cv/20250627_cv_en.pdf" target="_blank">CV (English)</a> / 
+          <a href="assets/cv/20250627_cv_zh.pdf" target="_blank">CV (中文)</a>
+        </div>
+
       </div>
 
       <nav id="navbar" class="nav-menu navbar">
@@ -200,19 +205,21 @@
         </div>
 
       </div>
-    </section><section id="projects" class="portfolio section-bg">
+    </section>
+
+    <section id="projects" class="portfolio section-bg">
       <div class="container">
 
         <div class="section-title">
           <h2>Projects</h2>
-          <p>Here is a selection of my key projects. Each project showcases my skills in system integration, human-robot collaboration, and applying research to solve real-world challenges. Click the link icon for more details.</p>
+          <p>Here is a selection of my key projects. Click on any card to see a larger version and a detailed description.</p>
         </div>
 
         <div class="row" data-aos="fade-up">
           <div class="col-lg-12 d-flex justify-content-center">
             <ul id="portfolio-flters">
               <li data-filter="*" class="filter-active">All</li>
-              <li data-filter=".filter-hrc">AI & HRC</li>
+              <li data-filter=".filter-hrc">HRC & aerial manipulation</li>
               <li data-filter=".filter-teleop">Teleoperation</li>
               <li data-filter=".filter-competition">Competition</li>
             </ul>
@@ -222,32 +229,55 @@
         <div class="row portfolio-container" data-aos="fade-up" data-aos-delay="100">
 
           <div class="col-lg-4 col-md-6 portfolio-item filter-hrc">
-            <div class="portfolio-wrap">
-              <img src="assets/img/portfolio/project-thesis.jpg" class="img-fluid" alt="AI-Copilot Project">
-              <div class="portfolio-links">
-                <a href="assets/img/portfolio/project-thesis.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="AI-Copilot for Aerial Manipulation"><i class="bx bx-plus"></i></a>
-                <a href="https://arg-nctu.github.io/projects/llm.html" target="_blank" title="More Details"><i class="bx bx-link"></i></a>
+            <a href="assets/img/portfolio/project_thesis.jpg" class="portfolio-lightbox" data-gallery="gallery-thesis" title="AI-Copilot for Aerial Manipulation" 
+               data-description="My Master's Thesis addresses the trade-off between wide-area navigation and precise manipulation, which increases operator cognitive load. My proposed solution is a VR teleoperation system featuring an AI-Copilot. Key innovations include: <ul><li>A viewpoint-switching interface to balance navigation and control.</li><li>A Behavior Tree-based AI assistant to automate routine tasks.</li><li>An LLM-powered generator for creating flexible search patterns.</li></ul>This framework effectively reduces operator workload, validated in user studies and real-world tests.">
+              <div class="portfolio-wrap">
+                  <img src="assets/img/portfolio/project_thesis.jpg" class="img-fluid" alt="AI-Copilot Project">
+                  <div class="portfolio-info">
+                    <h4>AI-Copilot for Aerial Manipulation</h4>
+                    <p>Master's Thesis / HRC</p>
+                  </div>
               </div>
-            </div>
+            </a>
           </div>
 
           <div class="col-lg-4 col-md-6 portfolio-item filter-teleop">
-            <div class="portfolio-wrap">
-              <img src="assets/img/portfolio/project-teleop.jpg" class="img-fluid" alt="Teleoperation Project">
-              <div class="portfolio-links">
-                <a href="assets/img/portfolio/project-teleop.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Cross-Technology Teleoperation Research"><i class="bx bx-plus"></i></a>
-                <a href="https://arg-nctu.github.io/projects/vr-navigation.html" target="_blank" title="More Details"><i class="bx bx-link"></i></a>
+             <a href="assets/img/portfolio/project_teleop.jpg" class="portfolio-lightbox" data-gallery="gallery-teleop" title="Teleoperation - Manipulator" 
+               data-description="In a joint project with George Mason University and domestic 5G labs, we developed an advanced teleoperation framework for dexterous mobile manipulation. The system utilized VR for high-immersion control and was tested over both cross-continental VPNs. Furthermore, we validated the framework on next-generation 5G networks to measure and prove its low-latency and high-reliability capabilities. The goal was to achieve precise, real-time control for complex tasks like setting a dining table from anywhere in the world.">
+              <div class="portfolio-wrap">
+                  <img src="assets/img/portfolio/project_teleop.jpg" class="img-fluid" alt="Teleoperation Project">
+                  <div class="portfolio-info">
+                    <h4>Teleop - Manipulator</h4>
+                    <p>Cross-Continental Research</p>
+                  </div>
               </div>
-            </div>
+            </a>
           </div>
 
           <div class="col-lg-4 col-md-6 portfolio-item filter-competition">
-            <div class="portfolio-wrap">
-              <img src="assets/img/portfolio/project-robotx.jpg" class="img-fluid" alt="RobotX Competition">
-              <div class="portfolio-links">
-                <a href="assets/img/portfolio/project-robotx.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="RobotX 2022 - 3rd Place"><i class="bx bx-plus"></i></a>
-                </div>
-            </div>
+            <a href="assets/img/portfolio/project_robotx.jpg" class="portfolio-lightbox" data-gallery="gallery-robotx" title="RobotX Competition 2022 (3rd Place)" 
+               data-description="The Maritime RobotX Challenge, hosted by RoboNation, the U.S. Office of Naval Research, and Australia's DSTG, is a premier autonomous maritime competition. Teams outfit a vessel (WAM-V) with a full autonomy stack and a cooperative UAV to solve complex on-water tasks. As a key System Integration Team Member of the 3rd place winning team, my primary responsibility was the successful integration of a Hyperspectral Imaging (HSI) camera into our ROS-based perception system.">
+              <div class="portfolio-wrap">
+                  <img src="assets/img/portfolio/project_robotx.jpg" class="img-fluid" alt="RobotX Competition">
+                  <div class="portfolio-info">
+                    <h4>RobotX Competition 2022</h4>
+                    <p>3rd Place Winner</p>
+                  </div>
+              </div>
+            </a>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-teleop">
+            <a href="assets/img/portfolio/project_teleop_ugv.png" class="portfolio-lightbox" data-gallery="gallery-teleop" title="Teleoperation - UGV Framework" 
+               data-description="This research, published in IEEE RAL, addresses the need for effective human oversight of robot teams in complex scenarios like search-and-rescue. We developed a framework that uses immersive VR to manage navigation among movable obstacles (NAMO). The system enhances operator situational awareness by integrating environmental simulations with live robot sensor data directly within the VR interface, and its effectiveness was validated through extensive user studies based on the DARPA Subterranean Challenge.">
+              <div class="portfolio-wrap">
+                  <img src="assets/img/portfolio/project_teleop_ugv.png" class="img-fluid" alt="UGV Teleoperation">
+                  <div class="portfolio-info">
+                    <h4>Teleop - UGV Framework</h4>
+                    <p>Published in IEEE RAL</p>
+                  </div>
+              </div>
+            </a>
           </div>
 
         </div>
@@ -353,27 +383,19 @@
   <script src="assets/js/main.js"></script>
 
   <script>
-    /**
-     * Sets a random background image for the Hero section on page load.
-     */
     document.addEventListener("DOMContentLoaded", function() {
-      // 1. Define your list of background images.
-      // Make sure these images are in your assets/img/ folder.
       const backgroundImages = [
-        'assets/img/bg1.jpg',
-        'assets/img/grduation1.jpg',
-        'assets/img/grduation2.jpg',
-        'assets/img/robotx1.jpg',
-        'assets/img/robotx2.jpg',
-        'assets/img/robotx3.jpg',
-        // Add more images here, like 'assets/img/bg4.jpg'
+        'assets/img/front_banner/ping_pong.jpg',
+        'assets/img/front_banner/graduation1.png',
+        'assets/img/front_banner/graduation2.png',
+        'assets/img/front_banner/robotx1.jpg',
+        'assets/img/front_banner/robotx2.png',
+        'assets/img/front_banner/robotx3.png',
       ];
 
-      // 2. Select a random image from the list.
       const randomIndex = Math.floor(Math.random() * backgroundImages.length);
       const selectedImage = backgroundImages[randomIndex];
 
-      // 3. Apply the image to the #hero section.
       const heroSection = document.getElementById('hero');
       if (heroSection) {
         heroSection.style.backgroundImage = `url('${selectedImage}')`;
